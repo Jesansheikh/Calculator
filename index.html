@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    function Calculator(x){
+        form.cal_display.value+=x;
+    }
+
+</script>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+    <form action=""name="form">
+        <div>
+            <input class="num_box" type="text" name="cal_display" placeholder="0">
+        </div>
+        <div class="row">
+            <input onclick="form.cal_display.value=null" class="button operator1" type="button" value="AC">
+            <input onclick="form.cal_display.value=form.cal_display.value.slice(0,-1)" class="button operator1" type="button" value="C">
+            <input onclick="Calculator(this.value)" class="button operator1" type="button" value="%">
+            <input onclick="Calculator(this.value)" class="button operator" type="button" value="/">
+        </div>
+        <div class="row">
+            <input onclick="Calculator(this.value)" class="button" type="button" value="7">
+            <input onclick="Calculator(this.value)" class="button" type="button" value="8">
+            <input onclick="Calculator(this.value)" class="button" type="button" value="9">
+            <input onclick="Calculator(this.value)" class="button operator" type="button" value="*">
+        </div>
+        <div class="row">
+            <input onclick="Calculator(this.value)" class="button" type="button" value="4">
+            <input onclick="Calculator(this.value)" class="button" type="button" value="5">
+            <input onclick="Calculator(this.value)" class="button" type="button" value="6">
+            <input onclick="Calculator(this.value)" class="button operator" type="button" value="-">
+        </div>
+        <div class="row">
+            <input onclick="Calculator(this.value)" class="button" type="button" value="1">
+            <input onclick="Calculator(this.value)" class="button" type="button" value="2">
+            <input onclick="Calculator(this.value)" class="button" type="button" value="3">
+            <input onclick="Calculator(this.value)" class="button operator" type="button" value="+">
+        </div>
+        <div class="row">
+            <input onclick="Calculator(this.value)" class="button zero" type="button" value="0">
+            <input onclick="Calculator(this.value)" class="button" type="button" value=".">
+            <input onclick="form.cal_display.value=eval(cal_display.value)" class="button operator" type="button" value="=">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
